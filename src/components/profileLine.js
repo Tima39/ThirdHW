@@ -7,11 +7,7 @@ const ProfileLine = ({title, info, bcolor, fcolor}) => {
    <>
    <View style={styles.container} />
    <View style={{height: 50, backgroundColor: bcolor}}>
-    <Text style={{marginLeft: 17,
-      marginTop: 8,
-      padding: 0,
-      fontSize: 12,
-      fontWeight: '400', color: fcolor}}>
+    <Text style={[{color: fcolor}, styles.paragraph]}>
      {title}
     </Text>
     <Text style={{marginLeft: 16,
@@ -35,4 +31,11 @@ const styles = StyleSheet.create({
       backgroundColor: 'white'
       
   },  
+  paragraph: {
+    marginLeft: 17,
+    marginTop: 8,
+    padding: 0,
+    fontSize: 12,
+    fontWeight: '400'
+  }
 });
