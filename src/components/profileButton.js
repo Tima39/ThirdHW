@@ -1,14 +1,14 @@
 import React from 'react';
-import { StyleSheet, Button, View, SafeAreaView, Text, Alert, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, SafeAreaView, Text, Alert, TouchableOpacity } from 'react-native';
 
 const ProfileButton = () => (
   <SafeAreaView style={styles.container}>
     <View>
       <TouchableOpacity
-        style={{backgroundColor:"green", justifyContent: 'center', alignItems: 'center', paddingVertical: 12}}
-        onPress={() => Alert.alert('Simple Button pressed')}
+        style={{borderRadius: 2, backgroundColor:"#C9C9C9", justifyContent: 'center', alignItems: 'center', paddingVertical: 6}}
+        onPress={() => Alert.alert('Купон добавлен')}
       >
-        <Text style={{fontSize: 16, lineHeight: 18, color: 'white'}}>Регистрация</Text>
+        <Text style={{fontSize: 14, lineHeight: 24, color: '#959595'}}>ДОБАВИТЬ КУПОН</Text>
       </TouchableOpacity>
     </View>
   </SafeAreaView>
@@ -16,10 +16,10 @@ const ProfileButton = () => (
 
 const styles = StyleSheet.create({
   container: {
-    
+    height: 36,
     justifyContent: 'center',
-    marginHorizontal: 15,
-    
+    marginHorizontal: 16,
+    marginTop: 8,
   },
   
 });

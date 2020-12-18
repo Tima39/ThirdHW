@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet} from 'react-native';
 
 const ProfileLine2 = () => {
   return (
@@ -21,8 +21,8 @@ const styles = StyleSheet.create({
     padding: 0,
     justifyContent: "center",
     alignItems: "center",
-        backgroundColor: 'white'
-  },
+        backgroundColor: 'white',
+       },
   paragraph: {
     paddingTop: 10,
     fontSize: 14,
