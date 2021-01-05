@@ -1,19 +1,19 @@
 import * as React from 'react';
 import { Text, View, StyleSheet} from 'react-native';
 
-const ProfileLine2 = () => {
+const CouponLeftCount = ({count}) => {
   return (
     <View style={styles.container}>
       
       <Text style={styles.paragraph}>
-      Осталось добавить: 5 шт
+      Осталось добавить: {count} шт.
       </Text>
       
     </View>
   );
 }
 
-export default ProfileLine2;
+export default CouponLeftCount;
 
 const styles = StyleSheet.create({
   container: {
