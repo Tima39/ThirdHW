@@ -9,7 +9,7 @@ import Red from './src/screens/Red';
 import Blue from './src/screens/Blue';
 import { createStore } from 'redux';
 import { Provider} from 'react-redux';
-import usersReducer from './src/reducers/users';
+import reducers from './src/reducers';
 import { PersistGate } from 'redux-persist/integration/react';
 import { persistStore, persistReducer } from 'redux-persist';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -20,7 +20,7 @@ const persistConfig = {
   key: 'user',
   storage: AsyncStorage
 };
-const persistedReducer = persistReducer(persistConfig, usersReducer)
+const persistedReducer = persistReducer(persistConfig, reducers)
 const store = createStore(persistedReducer);
 const persistor = persistStore(store);
 

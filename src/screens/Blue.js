@@ -17,7 +17,7 @@ const Item = ({ item, onPress, style }) => (
 );
 
 const Blue = ({navigation}) => {
-  const users = useSelector(state => state);
+  const users = useSelector(state => state.users);
   const dispatch = useDispatch();
   console.log("blue",users);
   const [selectedId, setSelectedId] = useState(null);
@@ -46,7 +46,7 @@ const Blue = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <FlatList
-        data={[]}
+        data={users}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         extraData={selectedId}
